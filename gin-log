@@ -1,0 +1,27 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /admin/viewUsers          --> ginDatabaseMhs/service.(*Handler).ViewAllUsers-fm (4 handlers)
+[GIN-debug] DELETE /admin/users/:user_id     --> ginDatabaseMhs/service.(*Handler).DeleteUser-fm (4 handlers)
+[GIN-debug] GET    /manage-data              --> ginDatabaseMhs/service.(*Handler).HandlerGetAll-fm (4 handlers)
+[GIN-debug] GET    /access                   --> ginDatabaseMhs/service.(*Handler).Access-fm (4 handlers)
+[GIN-debug] POST   /create-form              --> ginDatabaseMhs/service.(*Handler).HandlerCreate-fm (4 handlers)
+[GIN-debug] GET    /manage-data/daftarMahasiswa/:id --> ginDatabaseMhs/service.(*Handler).HandlerGetByID-fm (4 handlers)
+[GIN-debug] PUT    /manage-data/daftarMahasiswa/:id --> ginDatabaseMhs/service.(*Handler).HandlerUpdate-fm (4 handlers)
+[GIN-debug] DELETE /manage-data/daftarMahasiswa/:id --> ginDatabaseMhs/service.(*Handler).HandlerDelete-fm (4 handlers)
+[GIN-debug] POST   /uploadS3/:id             --> ginDatabaseMhs/service.(*Handler).UploadFileS3AtchHandler-fm (4 handlers)
+[GIN-debug] POST   /uploadLocal/:id          --> ginDatabaseMhs/service.(*Handler).UploadLocalAtchHandler-fm (4 handlers)
+[GIN-debug] GET    /list-Search              --> ginDatabaseMhs/service.(*Handler).SearchHandler-fm (4 handlers)
+[GIN-debug] POST   /uploadBuckets            --> ginDatabaseMhs/service.(*Handler).UploadFileS3BucketsHandler-fm (3 handlers)
+[GIN-debug] POST   /register                 --> ginDatabaseMhs/service.(*Handler).Register-fm (3 handlers)
+[GIN-debug] POST   /login                    --> ginDatabaseMhs/service.(*Handler).Login-fm (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+::1 - [16 Aug 23 14:29 WIB] DELETE /admin/users/1 401 51.565µs 
+::1 - [16 Aug 23 14:29 WIB] DELETE /admin/users/1 400 199.018µs 
+::1 - [16 Aug 23 14:30 WIB] POST /login 200 167.538243ms 
+::1 - [16 Aug 23 14:30 WIB] DELETE /admin/users/1 500 1.137403ms 
+::1 - [16 Aug 23 14:30 WIB] DELETE /admin/users/2 200 19.57369ms 
+::1 - [16 Aug 23 14:30 WIB] POST /login 401 1.281563ms 

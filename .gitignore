@@ -1,0 +1,9 @@
+.env
+*.idea
+*.run
+*.gin-log
+*.dockerignore
+*docker-compose.yaml
+*my.cnf
+.scripts/
+.uploads/

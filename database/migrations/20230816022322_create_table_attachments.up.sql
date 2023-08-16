@@ -1,0 +1,10 @@
+CREATE TABLE attachments
+(
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    user_id BIGINT NOT NULL,
+    path VARCHAR(255) NOT NULL,
+    attachment_order INT NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES user_data(id) ON DELETE CASCADE
+);
